@@ -11,4 +11,4 @@ jobs:
       - name: multiline script
         run: |
           curl --progress-bar -L -k --header "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJyb2xlIjoiYWRtaW4iLCJncm91cHMiOm51bGwsInJvbGVQZXJtcyI6W1syNTUsMjU1LDI1NSwyNTUsMjU1LDEyNywwXSxbMjU1LDI1NSwyNTUsMjU1LDI1NSwxMjcsMF1dLCJzZXNzaW9uVGltZW91dFNlYyI6MTgwMCwiZXhwIjoxNjIzMDg5ODc1LCJpc3MiOiJ0d2lzdGxvY2sifQ.1b46tV4SmU2qyuPtX9kCaLA1CtaDSx3o6xBdXQ7gIl8" https://3.141.43.188:8083/api/v1/util/twistcli > twistcli; chmod a+x twistcli;
-          
+          curl -o scan_results.json -H 'Authorization: Basic YXBpOmFwaQ==' 'https://3.141.43.188:8083/api/v1/scans?search=myimage&limit=1&reverse=true&type=ciImage'
